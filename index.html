@@ -1,0 +1,94 @@
+<link rel="stylesheet" type="text/css" href="style.css" />
+<div class="container">
+  <header class="header">
+    <h1 id="title">Computer Science Survey Form</h1>
+    <p id="description">Thank you for taking part in the survey</p>
+  </header>
+  <form id="survey-form">
+
+    <div class="participants">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter here" required />
+    </div>
+    <div class="participants">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+    </div>
+    <div class="participants">
+
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+    </div>
+
+    <div class="participants">
+      <p>Which option best describes your current role ?</p>
+      <select id="dropdown" name="role" class="participants" required>
+        <option disabled selected value>Select your current role</option>
+        <option value="student">Student</option>
+        <option value="pupil">Pupil</option>
+        <option value="teacher">Teacher</option>
+        <option value="lawyer">Lawyer</option>
+        <option value="economist">Economist</option>
+        <option value="marketing">Marketing(Including Digital Marketing)</option>
+        <option value="entrepreuner">Entrepreuner</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="participants">
+      <label id="study CS" for="study">
+        <p>Why did you decide to study CS ?</p>
+      </label>
+      <input type="text" name="type here" id="study CS" class="participants" placeholder="Enter here" required />
+    </div>
+
+    <div class="participants">
+      <p>Is studying CS hard for you ?</p>
+      <label>
+        <input name="prefer" value="very-hard" type="radio" class="input-radio" checked />Very hard</label>
+
+      <label>
+        <input name="prefer" value="hard" type="radio" class="input-radio" checked>Hard</label>
+
+      <label>
+        <input name="prefer" value="no-hard" type="radio" class="input-radio" checked>Not so hard</label>
+    </div>
+
+    <div class="participants">
+      <label id="how-long" for="study">
+        <p>How many month are you studying ? </p>
+      </label>
+      <input type="number" id="how-long-study" for="study" class="participants" placeholder="Enter here" required />
+    </div>
+
+    <div class="participants">
+      <label id="how-long" for="study">
+        <p>What do you like in studying CS ? </p>
+      </label>
+      <input id="how-long-study" for="study" class="participants" placeholder="Enter here" required />
+    </div>
+
+    <div class="participants">
+      <p>
+        What would you like to become?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label>
+        <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end developer</label>
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end developer</label>
+      <label>
+        <input name="prefer" value="full-stack" type="checkbox" class="input-checkbox" />Full Stack developer</label>
+      </label>
+
+      <div class="participants">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="participants">
+        <button type="submit" id="submit" class="submit-button"> Submit </button>
+      </div>
+  </form>
+</div>
